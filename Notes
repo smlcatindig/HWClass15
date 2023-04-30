@@ -1,0 +1,64 @@
+
+
+
+
+
+
+How to create method in java?
+===============================================================================================
+Types of variables with with respect to scope(coverage, reach, the visibility and accessibility)
+    There are three types of variables with respect to scope. local, instance and static variables.
+Local variables:
+=>local variables are created inside block of codes and they can only be accessed with that block for example
+all the variables that we create inside methods, if statements, switch statements, loops etc.
+instance variable:
+Upside:
+1.) Local variables stay shorter in the memory the moment that block of code is done executing, memory
+is freed and is available to be re-used.
+2.) We can re-use the same name for other variables in other blocks of code.
+
+Downside:
+1.) They have limited visibility. They can't be used outside of the block in which they are created.
+2.) Initialization is mandatory for local variables, and failure to do so results in a compilation error
+
+Instance variables:
+=>instance variables are created outside of any block of code like method, loop, if statement etc. but
+they are inside a class.
+Upside:
+1.) Can be used without initialization
+2.) Can be shared between all instance methods of a class
+
+Downside:
+1.) They tend to occupy the memory for longer as compared to local variables
+2.) They are hard to debug.
+
+Static variables:
+=>all the instance variables with static keyword are called static variables.
+Upside:
+1.) They can be shared across instance statics methods and the instances of a class.
+2.) Only one memory location is reserved for static variables even though
+we create one million objects of that class.
+
+Downside:
+1.) The code can be hard to debug if we don't use the final keyword.
+2.) If value is changed anywhere in the code that gets changed for the complete application.
+
+When should we use local variables:
+ALWAYS whenever possible.
+
+When should we use instance variables:
+1.) If we have to share something in more than 1 instance methods.
+2.) When we are planning to create multiple objects of a class and these objects can have different values
+for different objects.
+
+When should we use static variables:
+1.) When we want to share something globally in all the classes methods blocks of code.
+2.) Mostly used to create constants (things that never change)
+
+
+
+
+
+
+
+
