@@ -22,17 +22,17 @@ Print out  total number of students
         Students s1=new Students();
         s1.name="Ryan";
         s1.ID="ID1234";
-        s1.numberOfStudents++;
+        numberOfStudents++;
 
         Students s2=new Students();
         s2.name="Suzy";
         s2.ID="ID0987";
-        s2.numberOfStudents++;
+        numberOfStudents++;
 
         Students s3=new Students();
         s3.name="Sarah";
         s3.ID="ID6547";
-        s3.numberOfStudents++;
+        numberOfStudents++;
 
         System.out.println(numberOfStudents);
 
